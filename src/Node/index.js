@@ -72,7 +72,7 @@ export default class Node extends React.Component {
     }
 
     return nodeSvgShape.shape === 'none'
-      ? null
+      ? <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/>
       : React.createElement(nodeSvgShape.shape, {
           ...nodeStyle.circle,
           ...nodeSvgShape.shapeProps,
