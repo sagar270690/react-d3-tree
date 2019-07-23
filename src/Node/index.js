@@ -70,7 +70,7 @@ export default class Node extends React.Component {
     if (circleRadius) {
       return <circle r={circleRadius} style={nodeStyle.circle} />;
     }
-
+    console.log(nodeSvgShape);
     return nodeSvgShape.shape === 'none'
       ? <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/>
       : React.createElement(nodeSvgShape.shape, {
