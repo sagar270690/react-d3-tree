@@ -113,7 +113,7 @@ export default class Node extends React.Component {
         onMouseOver={this.handleOnMouseOver}
         onMouseOut={this.handleOnMouseOut}
       >
-        {this.renderNodeElement(nodeStyle)}
+        <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="50" width="50"/>
 
         {allowForeignObjects && nodeLabelComponent ? (
           <ForeignObjectElement nodeData={nodeData} nodeSize={nodeSize} {...nodeLabelComponent} />
